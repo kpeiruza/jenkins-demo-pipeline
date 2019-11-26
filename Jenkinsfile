@@ -12,7 +12,7 @@ pipeline {
             git 'https://github.com/jglick/simple-maven-project-with-tests.git'
             container('ubuntu') {
               sh "cat /etc/os-release"
-              sh "yum --version"
+              sh "apt --version"
             }
          }
 
